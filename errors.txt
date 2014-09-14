@@ -1,0 +1,23 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/inc/functions.rpy", line 3: unexpected EOF while parsing
+    def clock(time):
+    
+
+File "game/inc/functions.rpy", line 5: 'return' outside function
+
+File "game/inc/functions.rpy", line 7: unexpected EOF while parsing
+    def create_pablarales(game):
+    
+
+File "game/inc/functions.rpy", line 9: 'return' outside function
+
+File "game/inc/functions.rpy", line 11: unexpected EOF while parsing
+    def final_report(game):
+    
+
+File "game/inc/functions.rpy", line 13: 'return' outside function
+
+Ren'Py Version: Ren'Py 6.18.0.635
