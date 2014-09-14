@@ -9,8 +9,8 @@ label start:
 "So you are determined..."
 "And completely sure that you want this..."
 "And I can't stop you"
-"I understand that you are tired of the world"
-"I understand that you are sick and sad"
+#"I understand that you are tired of the world"
+#"I understand that you are sick and sad"
 "So I just will assist you in the process"
 
 o "Welcome to your Cryo Jelly"
