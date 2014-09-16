@@ -1,9 +1,18 @@
 # Cryo Jelly - Chapter 00
 # Functions file
+transform alpha_dissolve:
+    alpha 0.0
+    linear 0.5 alpha 1.0
+    on hide:
+        linear 0.5 alpha 0
 
-# def clock(time):
-# Timer works through all the gameplay
-# return
+screen countdown:
+    timer .1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
+    if time <= 2:
+        text str(time) xpos .1 ypos .1 color "#FF0000" at alpha_dissolve
+    else:
+        text str(time) xpos .1 ypos .1 at alpha_dissolve
+
 
 # def create_pablarales(game):
 # Creates the pablarales character at the end of the game depending on gameplay vars
