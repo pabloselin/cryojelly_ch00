@@ -10,7 +10,7 @@ transform alpha_dissolve:
         linear 0.5 alpha 0
 
 screen countdown:
-    timer self.1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
+    timer .1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
     if time <= 2:
         text str(time) xpos .1 ypos .1 color "#FF0000" at alpha_dissolve
     else:
