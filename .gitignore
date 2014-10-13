@@ -4,3 +4,4 @@ log.txt
 tmp
 *.rpyc
 saves/*
+game/bytecode.rpyb
