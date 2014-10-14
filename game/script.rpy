@@ -21,6 +21,15 @@ label start:
     $timer_range = 1
     $timer_jump = 'end'
     show screen countdown
+    
+    # On screen stats
+    show screen quantum
+    show screen thermal
+    show screen gluon
+    show screen chromo
+    show screen light
+    show screen opalescence
+    show screen quark
 
     "So you are determined..."
     "And completely sure that you want this..."

@@ -17,6 +17,30 @@ screen countdown:
         text str(time) xpos .1 ypos .1 at alpha_dissolve
 
 
+# Live stats: they can be strings, floats, booleans...
+
+screen quantum:
+    text str("Quantum Phases/Nsec:") xpos .6 ypos.1 at alpha_dissolve
+
+screen thermal:
+    text str("Thermal Kernel:") xpos .6 ypos.15 at alpha_dissolve
+    
+screen gluon:
+    text str("Gluon Strong Interaction:") xpos .6 ypos.20 at alpha_dissolve
+    
+screen chromo:
+    text str("Chromodynamics:") xpos .6 ypos.25 at alpha_dissolve
+
+screen light:
+    text str("Light Scattering:") xpos .6 ypos.30 at alpha_dissolve
+    
+screen opalescence:
+    text str("Critical Opalescence:") xpos .6 ypos.35 at alpha_dissolve
+
+screen quark:
+    text str("Quark Confinment:") xpos .6 ypos.40 at alpha_dissolve
+
+
 # def create_pablarales(game):
 # Creates the pablarales character at the end of the game depending on gameplay vars
 # return
