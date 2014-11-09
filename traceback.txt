@@ -1,60 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 20, in script
+  File "game/script.rpy", line 34, in script
     "So you are determined..."
-  File "game/inc/functions.rpy", line 5, in execute
-    screen countdown:
-  File "game/inc/functions.rpy", line 6, in execute
-    timer 1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
-  File "game/inc/functions.rpy", line 6, in keywords
-    timer 1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
-NameError: name 'time' is not defined
+  File "game/inc/functions.rpy", line 24, in execute
+    screen quantum:
+  File "game/inc/functions.rpy", line 26, in execute
+    text str("Quantum Phases/Nsec:" + d20roll) xpos .6 ypos.1 at alpha_dissolve
+TypeError: cannot concatenate 'str' and 'int' objects
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 20, in script
+  File "game/script.rpy", line 34, in script
     "So you are determined..."
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/ast.py", line 586, in execute
+  File "D:\renpy-6.17.7-sdk\renpy\ast.py", line 586, in execute
     renpy.exports.say(who, what, interact=self.interact)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/exports.py", line 992, in say
+  File "D:\renpy-6.17.7-sdk\renpy\exports.py", line 992, in say
     who(what, interact=interact)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/character.py", line 824, in __call__
+  File "D:\renpy-6.17.7-sdk\renpy\character.py", line 824, in __call__
     self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/character.py", line 686, in do_display
+  File "D:\renpy-6.17.7-sdk\renpy\character.py", line 686, in do_display
     **display_args)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/character.py", line 489, in display_say
+  File "D:\renpy-6.17.7-sdk\renpy\character.py", line 489, in display_say
     rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/ui.py", line 247, in interact
+  File "D:\renpy-6.17.7-sdk\renpy\ui.py", line 247, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 2145, in interact
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 2145, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 2393, in interact_core
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 2393, in interact_core
     root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 335, in visit_all
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 335, in visit_all
     d.visit_all(callback)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 335, in visit_all
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 335, in visit_all
     d.visit_all(callback)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 335, in visit_all
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 335, in visit_all
     d.visit_all(callback)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/screen.py", line 380, in visit_all
+  File "D:\renpy-6.17.7-sdk\renpy\display\screen.py", line 380, in visit_all
     callback(self)
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/core.py", line 2393, in <lambda>
+  File "D:\renpy-6.17.7-sdk\renpy\display\core.py", line 2393, in <lambda>
     root_widget.visit_all(lambda i : i.per_interact())
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/screen.py", line 392, in per_interact
+  File "D:\renpy-6.17.7-sdk\renpy\display\screen.py", line 392, in per_interact
     self.update()
-  File "/Users/pabloselin/Documents/gamedev/renpy-6.18.0-sdk/renpy/display/screen.py", line 551, in update
+  File "D:\renpy-6.17.7-sdk\renpy\display\screen.py", line 551, in update
     self.screen.function(**self.scope)
-  File "game/inc/functions.rpy", line 5, in execute
-    screen countdown:
-  File "game/inc/functions.rpy", line 6, in execute
-    timer 1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
-  File "game/inc/functions.rpy", line 6, in keywords
-    timer 1 repeat True action If(time > 0, true=SetVariable('time', time - 1), false=[Hide('countdown'), Jump(timer_jump)])
-  File "<screen language>", line 6, in <module>
-NameError: name 'time' is not defined
+  File "game/inc/functions.rpy", line 24, in execute
+    screen quantum:
+  File "game/inc/functions.rpy", line 26, in execute
+    text str("Quantum Phases/Nsec:" + d20roll) xpos .6 ypos.1 at alpha_dissolve
+  File "<screen language>", line 26, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
 
-Darwin-13.3.0-x86_64-i386-64bit
+Windows-7-6.1.7601-SP1
 Ren'Py 6.18.0.635
 cryo_jelly_00 0.0
