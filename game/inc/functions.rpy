@@ -21,7 +21,7 @@ screen countdown:
 
 screen quantum:
     text str("Quantum Phases/Nsec:") xpos .56 ypos.1 at alpha_dissolve
-    $ random_number = renpy.random.randint(-3, 3)
+    $ random_number = renpy.random.random()
     text str(random_number) xpos .91 ypos.1 at alpha_dissolve
 
 screen thermal:
@@ -51,7 +51,7 @@ screen opalescence:
 
 screen quark:
     text str("Quark Confinment:") xpos .56 ypos.40 at alpha_dissolve
-    $ random_number = renpy.random.randint(0, 1)
+    $ random_number = renpy.random.randint(-1, 1)
     text str(random_number) xpos .91 ypos.40 at alpha_dissolve
 
 

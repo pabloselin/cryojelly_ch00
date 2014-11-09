@@ -3,11 +3,13 @@
 While running game code:
   File "game/script.rpy", line 34, in script
     "So you are determined..."
-  File "game/inc/functions.rpy", line 24, in execute
+  File "game/inc/functions.rpy", line 22, in execute
     screen quantum:
-  File "game/inc/functions.rpy", line 26, in execute
-    text str("Quantum Phases/Nsec:" + d20roll) xpos .6 ypos.1 at alpha_dissolve
-TypeError: cannot concatenate 'str' and 'int' objects
+  File "game/inc/functions.rpy", line 24, in execute
+    $ random_number = renpy.random.random(-3.2, 3.0)
+  File "game/inc/functions.rpy", line 24, in <module>
+    $ random_number = renpy.random.random(-3.2, 3.0)
+TypeError: random() takes exactly 1 argument (3 given)
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -44,12 +46,13 @@ Full traceback:
     self.update()
   File "D:\renpy-6.17.7-sdk\renpy\display\screen.py", line 551, in update
     self.screen.function(**self.scope)
-  File "game/inc/functions.rpy", line 24, in execute
+  File "game/inc/functions.rpy", line 22, in execute
     screen quantum:
-  File "game/inc/functions.rpy", line 26, in execute
-    text str("Quantum Phases/Nsec:" + d20roll) xpos .6 ypos.1 at alpha_dissolve
-  File "<screen language>", line 26, in <module>
-TypeError: cannot concatenate 'str' and 'int' objects
+  File "game/inc/functions.rpy", line 24, in execute
+    $ random_number = renpy.random.random(-3.2, 3.0)
+  File "game/inc/functions.rpy", line 24, in <module>
+    $ random_number = renpy.random.random(-3.2, 3.0)
+TypeError: random() takes exactly 1 argument (3 given)
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.18.0.635
